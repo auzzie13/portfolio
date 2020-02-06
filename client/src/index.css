@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  /* background-image: url(./assets/iphone-notebook-pen-working-34578.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto; */
+}
+
+html { 
+  background: url(./assets/iphone-notebook-pen-working-34578.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
