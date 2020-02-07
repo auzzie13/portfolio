@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
-import logo from "../../assets/HatchfulExport-All/logo_transparent.png";
+import logo from "../../assets/HatchfulExport-All/linkedin_profile_image.png";
 
 function NavBar() {
   return (
