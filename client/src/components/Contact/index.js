@@ -3,10 +3,10 @@ import "./style.css";
 import Cards from "../Cards";
 import Form from "../Form";
 
-function Contact () {
+function Contact (props) {
     return (
         <div>
-        <Form />
+        <Form onChange={props.onChange} onClick={props.onClick} />
         <Cards />
         </div>
     )
