@@ -10,21 +10,21 @@ function NavBar() {
         <Link className="navbar-item" to="/">
           <img src={logo} alt="logo" id="logo" />
         </Link>
-
         <label
-          role="button"
-          className="navbar-burger burger"
-          aria-label="menu"
-          aria-expanded="false"
-          htmlFor="nav-toggle-state"
-          data-target="navbarBasicExample"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </label>
-      </div>
-      <div id="navbarBasicExample" className="navbar-menu">
+              role="button"
+              className="navbar-burger burger"
+              aria-label="menu"
+              aria-expanded="false"
+              htmlFor="nav-toggle-state"
+            >
+              <span aria-hidden="true" />
+              <span aria-hidden="true" />
+              <span aria-hidden="true" />
+            </label>
+          </div>
+          <input type="checkbox" id="nav-toggle-state" />
+
+          <div className="navbar-menu">
         <div className="navbar-end">
           <Link className="navbar-item" id="navbar-item" to="/projects">
             Projects

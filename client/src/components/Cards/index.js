@@ -4,6 +4,7 @@ import "./style.css";
 import linkedin from "../../assets/LinkedIn-Thumbnail.png";
 import github from "../../assets/github.png";
 import pdf from "../../assets/pdf.jpeg";
+import resume from "../../assets/resume.pdf";
 
 function Cards() {
   return (
@@ -19,9 +20,9 @@ function Cards() {
               </div>
               <div className="media-content">
                 <p className="title is-4">LinkedIn</p>
-                <Link to="https://www.linkedin.com/in/austin-williams-76b75b142/">
+                <a href="https://www.linkedin.com/in/austin-williams-76b75b142/" target="_blank" >
                   Profile
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -38,7 +39,7 @@ function Cards() {
               </div>
               <div className="media-content">
                 <p className="title is-4">GitHub</p>
-                <Link to="https://github.com/auzzie13">Repositories</Link>
+                <a href="https://github.com/auzzie13" target="_blank">Repositories</a>
               </div>
             </div>
           </div>
@@ -55,7 +56,7 @@ function Cards() {
               </div>
               <div className="media-content">
                 <p className="title is-4">Resume</p>
-                <Link to="#placeholder">Download</Link>
+                <a href={resume} target="_blank" >View</a>
               </div>
             </div>
           </div>

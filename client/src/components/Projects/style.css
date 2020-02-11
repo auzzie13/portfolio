@@ -1,15 +1,4 @@
-.is-ancestor {
-  margin-right: auto;
-  margin-left: auto;
-  width: 75%;
-  background-color: #a7cdcc;
-  /* overflow: auto; */
-}
-
-.language-button {
-  background-color: #a7cdcc;
-  width: 2.5em;
-  padding-left: 50px;
-  padding-right: 50px;
-  text-align: center;
+.card {
+  background-color: rgba(167,205,204,.5);
+  /* color: #90938e */
 }

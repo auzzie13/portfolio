@@ -1,14 +1,20 @@
 import React from "react";
 import "./style.css";
 
-function Form() {
+function Form(props) {
   return (
     <div className="columns is-centered">
       <div className="column is-half">
         <div className="field">
           <label className="label">Name</label>
           <div className="control">
-            <input className="input" type="text" placeholder="Text input" />
+            <input
+              onChange={e => props.onChange(e, "form")}
+              className="input"
+              type="text"
+              placeholder="Text input"
+              name="name"
+            />
           </div>
         </div>
 
@@ -16,10 +22,11 @@ function Form() {
           <label className="label">Email</label>
           <div className="control has-icons-left has-icons-right">
             <input
+              onChange={e => props.onChange(e, "form")}
               className="input"
+              name="email"
               type="email"
               placeholder="Email input"
-              value="hello@"
             />
             <span className="icon is-small is-left">
               <i className="fas fa-envelope"></i>
@@ -33,16 +40,18 @@ function Form() {
         <div className="field">
           <label className="label">Message</label>
           <div className="control">
-            <textarea className="textarea" placeholder="Textarea"></textarea>
+            <textarea
+              onChange={e => props.onChange(e, "form")}
+              className="textarea"
+              placeholder="Textarea"
+              name="message"
+            ></textarea>
           </div>
         </div>
 
         <div className="field is-grouped">
           <div className="control">
-            <button className="button is-link">Submit</button>
-          </div>
-          <div className="control">
-            <button className="button is-link is-light">Cancel</button>
+            <button className="button" onClick={props.onClick} >Submit</button>
           </div>
         </div>
       </div>

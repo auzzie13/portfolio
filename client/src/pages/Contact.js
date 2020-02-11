@@ -1,14 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import NavBar from "../components/NavBar";
 import Contact from "../components/Contact";
+import axios from "axios";
 
 function ContactPage() {
-    return (
-        <div>
-        <NavBar />
-        <Contact />
-        </div>
-    )
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: ""
+  });
+
+  const onChange = (e) => {
+      console.log(e.target.name, e.target.value)
+  }
+
+  const onClick= () => {
+      console.log("button clicked")
+    console.log(JSON.stringify(form));
+    // axios
+    //   .post("/api/contact/form", form)
+    //   //.then(res => res)
+    //   .then(({ data }) => {
+    //     if (!data.success) {
+    //     //   addToast(data.message, { appearance: "error", autoDismiss: true });
+    //     console.log(data);
+    //     } else {
+    //     //   addToast(data.message, { appearance: "success", autoDismiss: true });
+    //       setForm({
+    //         name: "",
+    //         email: "",
+    //         message: ""
+    //       });
+    //     }
+    //   })
+    //   .catch(err => console.log("caught", err));
+  };
+
+  return (
+    <div>
+      <NavBar />
+      <Contact onChange={onChange} onClick={onClick} />
+    </div>
+  );
 }
 
 export default ContactPage;
