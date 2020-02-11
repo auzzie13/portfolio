@@ -1,3 +1,15 @@
+.is-ancestor {
+  margin-right: auto;
+  margin-left: auto;
+  width: 75%;
+  background-color: #a7cdcc;
+  /* overflow: auto; */
+}
+
 .language-button {
-    background-color: #a7cdcc;
+  background-color: #a7cdcc;
+  width: 2.5em;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
 }
