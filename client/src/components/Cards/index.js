@@ -14,7 +14,7 @@ function Cards() {
             <div className="media">
               <div className="media-left">
                 <figure className="image is-48x48">
-                  <img src={linkedin} alt="linkedin-image" />
+                  <img src={linkedin} alt="linkedin" />
                 </figure>
               </div>
               <div className="media-content">
@@ -33,7 +33,7 @@ function Cards() {
             <div className="media">
               <div className="media-left">
                 <figure className="image is-48x48">
-                  <img src={github} alt="github image" />
+                  <img src={github} alt="github" />
                 </figure>
               </div>
               <div className="media-content">
@@ -50,7 +50,7 @@ function Cards() {
             <div className="media">
               <div className="media-left">
                 <figure className="image is-48x48">
-                  <img src={pdf} alt="pdf image" />
+                  <img src={pdf} alt="pdf" />
                 </figure>
               </div>
               <div className="media-content">

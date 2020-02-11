@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  box-sizing: border-box;
   /* background-image: url(./assets/iphone-notebook-pen-working-34578.jpg);
   background-size: contain;
   background-repeat: no-repeat;
