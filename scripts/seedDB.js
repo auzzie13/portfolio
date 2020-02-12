@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const db = require("../models");
+const Project = require("../models/project");
 
 // This file empties the Books collection and inserts the books below
 
@@ -54,7 +54,7 @@ const projectsSeed = [
   {
     name: "Developer Profile Generator",
     codeLink: "https://github.com/auzzie13/developerProfileGenerator",
-    deploymentLink: "command-line application",
+    deploymentLink: "",
     description:
       "A command-line application that dynamically generates a PDF profile from a GitHub username.",
     languages: "Node, Javascript",
@@ -117,16 +117,25 @@ const projectsSeed = [
   {
     name: "Kibbles-N-Brews",
     codeLink: "https://github.com/Ztalley13/dogApp",
-    deploymentLink: "https://ztalley13.github.io/dogApp/",
+    deploymentLink: "https://kibbles-n-brews.herokuapp.com/",
     description:
       "Kibbles-&-Brews is a user interactive app that allows people to not only find other people with size and breed compatible counterparts and playmates for their dogs, but it also allows them to blog about their beloved pets and allows user groups to find dog friendly places to gather.",
+    languages: "Mongoose, Express, React, Node",
+    buttonFilter: "mern"
+  },
+  {
+    name: "Portfolio",
+    codeLink: "",
+    deploymentLink: "austin-d-williams.herokuapp.com",
+    description:
+      "Hope you are enjoying the site.",
     languages: "Mongoose, Express, React, Node",
     buttonFilter: "mern"
   }
 ];
 
-db.Project.remove({})
-  .then(() => db.Project.collection.insertMany(projectsSeed))
+Project.remove({})
+  .then(() => Project.collection.insertMany(projectsSeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);
