@@ -9,6 +9,7 @@ function Form(props) {
           <label className="label">Name</label>
           <div className="control">
             <input
+              id="name"
               onChange={e => props.onChange(e, "form")}
               className="input"
               type="text"
@@ -22,6 +23,7 @@ function Form(props) {
           <label className="label">Email</label>
           <div className="control has-icons-left has-icons-right">
             <input
+              id="email"
               onChange={e => props.onChange(e, "form")}
               className="input"
               name="email"
@@ -41,6 +43,7 @@ function Form(props) {
           <label className="label">Message</label>
           <div className="control">
             <textarea
+              id="message"
               onChange={e => props.onChange(e, "form")}
               className="textarea"
               placeholder="Textarea"
@@ -51,7 +54,9 @@ function Form(props) {
 
         <div className="field is-grouped">
           <div className="control">
-            <button className="button" onClick={props.onClick} >Submit</button>
+            <button className="button" onClick={props.onClick} id="submit">
+              Submit
+            </button>
           </div>
         </div>
       </div>

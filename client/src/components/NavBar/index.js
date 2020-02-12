@@ -1,16 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
-import logo from "../../assets/HatchfulExport-All/logo.png";
+import logo from "../../assets/HatchfulExport-All/logo_transparent.png";
 
 function NavBar() {
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation" id="nav-bar">
       <div className="navbar-brand" id="navbar-brand">
-        <Link className="navbar-item" to="/">
+        <Link className="navbar-item" to="/" >
           <img src={logo} alt="logo" id="logo" />
         </Link>
         <label
+              id="label"
               role="button"
               className="navbar-burger burger"
               aria-label="menu"
@@ -26,10 +27,10 @@ function NavBar() {
 
           <div className="navbar-menu">
         <div className="navbar-end">
-          <Link className="navbar-item" id="navbar-item" to="/projects">
+          <Link className="navbar-item" id="navbar-item1" to="/projects">
             Projects
           </Link>
-          <Link className="navbar-item" id="navbar-item" to="/contact">
+          <Link className="navbar-item" id="navbar-item2" to="/contact">
             Contact
           </Link>
         </div>

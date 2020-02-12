@@ -1,7 +1,42 @@
 .column {
-    padding-top: 50px;
+  padding-top: 50px;
 }
 
 .card {
-    border-radius: 20px;
+  border-radius: 20px;
+}
+
+#name,
+#email,
+#message {
+  background-color: rgba(167, 205, 204, 0.5);
+  color: #555555;
+}
+
+#linkedin,
+#github,
+#resume {
+  color: #555555;
+  font-family: helvetica;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#linkedin:hover,
+#github:hover,
+#resume:hover {
+  text-decoration: underline;
+  background-color: #777777;
+}
+
+#linkedin:active,
+#github:active,
+#resume:active {
+  color: black;
+}
+
+#linkedin:visited,
+#github:visited,
+#resume:visited {
+  color: #555555;
 }
