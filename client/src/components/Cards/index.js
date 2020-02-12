@@ -4,7 +4,7 @@ import "./style.css";
 import linkedin from "../../assets/linkedin.png";
 import github from "../../assets/github.png";
 import pdf from "../../assets/pdf.png";
-import resume from "../../assets/resume.pdf";
+import resume from "../../assets/resumefinal.pdf";
 
 function Cards() {
   return (
