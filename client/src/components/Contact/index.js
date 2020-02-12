@@ -6,7 +6,7 @@ import Form from "../Form";
 function Contact (props) {
     return (
         <div>
-        <Form onChange={props.onChange} onClick={props.onClick} />
+        <Form onChange={props.onChange} onClick={props.onClick} {...props.form} />
         <Cards />
         </div>
     )

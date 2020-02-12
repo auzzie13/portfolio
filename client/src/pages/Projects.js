@@ -36,9 +36,9 @@ function ProjectsPage() {
   function onClick(e) {
     console.log("onClick portfolio: ", portfolio);
     console.log(e.target.name);
-    if(e.target.name === "all") {
-      setFilteredPortfolio([...filteredPortfolio, ...portfolio])
-      console.log("filtered portfolio: ", filteredPortfolio)
+    if (e.target.name === "all") {
+      loadProjects();
+      console.log("filtered portfolio: ", filteredPortfolio);
     }
     updateProjects(e);
   }
@@ -53,12 +53,18 @@ function ProjectsPage() {
 
   function loadProjects() {
     console.log("portfolio on load: ", portfolio);
-    axios.get("/api/projects/all").then(({ data: portfolio, data: filteredPortfolio }) => {
+    axios.get("/api/projects/all").then(({ data: portfolio }) => {
+      setFilteredPortfolio(portfolio);
       setPortfolio(portfolio);
-      setFilteredPortfolio(filteredPortfolio);
       console.log("after state portfolio: ", portfolio);
-      console.log("after state filtered portfolio: ", filteredPortfolio)
+      console.log("after state filtered portfolio: ", filteredPortfolio);
     });
+    // axios.get("/api/projects/all").then(({ data: portfolio, data: filteredPortfolio }) => {
+    //   setPortfolio(portfolio);
+    //   setFilteredPortfolio(filteredPortfolio);
+    //   console.log("after state portfolio: ", portfolio);
+    //   console.log("after state filtered portfolio: ", filteredPortfolio)
+    // });
   }
 
   return (

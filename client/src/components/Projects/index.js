@@ -18,13 +18,14 @@ function Projects(props) {
                 </div>
                 <div className="media-content">
                   <p className="title is-4">{props.name}</p>
-                  <p className="subtitle is-6">{props.link}</p>
+                  <a href={props.link} target="_blank" className="subtitle is-6">{props.link}</a>
                 </div>
               </div>
 
               <div className="content">
                 {props.description}
                 <br />
+                {props.languages}
               </div>
             </div>
           </div>

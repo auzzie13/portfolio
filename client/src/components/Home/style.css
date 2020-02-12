@@ -3,14 +3,14 @@ h3 {
     color: #a7cdcc;
     font-weight: bold;
     font-size: 2.4em;
-    text-shadow: -1px 0 #90938e, 0 1px #90938e, 1px 0 #90938e, 0 -1px #90938e;
+    text-shadow: -1px 0 #555555, 0 1px #555555, 1px 0 #555555, 0 -1px #555555;
 }
 
 h1 {
     text-align: center;
     color: #a7cdcc;
     font-weight: bolder;
-    text-shadow: -1px 0 #90938e, 0 1px #90938e, 1px 0 #90938e, 0 -1px #90938e;
+    text-shadow: -1px 0 #555555, 0 1px #555555, 1px 0 #555555, 0 -1px #555555;
 }
 
 
