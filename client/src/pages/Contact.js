@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useToasts } from "react-toast-notifications";
 import NavBar from "../components/NavBar";
 import Contact from "../components/Contact";
 import axios from "axios";
@@ -9,6 +10,9 @@ function ContactPage() {
     email: "",
     message: ""
   });
+
+  const { addToast } = useToasts();
+
 
   const onChange = e => {
     console.log(e.target.name, e.target.value);
@@ -24,10 +28,10 @@ function ContactPage() {
       //.then(res => res)
       .then(({ data }) => {
         if (!data.success) {
-          //   addToast(data.message, { appearance: "error", autoDismiss: true });
+            addToast(data.message, { appearance: "error", autoDismiss: true });
           console.log("data: ", data);
         } else {
-          //   addToast(data.message, { appearance: "success", autoDismiss: true });
+            addToast(data.message, { appearance: "success", autoDismiss: true });
           setForm(data);
         }
       })

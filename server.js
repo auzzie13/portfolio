@@ -18,7 +18,7 @@ app.use(express.static("public"));
 app.use(routes);
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/portfolio");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://user:password1@ds023438.mlab.com:23438/heroku_mxzzlthc");
 
 // Send every other request to the React app
 // Define any API routes before this runs

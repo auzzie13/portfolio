@@ -1,0 +1,31 @@
+.column {
+  padding-top: 50px;
+}
+
+.card {
+  border-radius: 20px;
+}
+
+#name,
+#email,
+#message {
+  background-color: rgba(167, 205, 204, 0.5);
+  color: #555555;
+}
+
+#submit {
+  background-color: #777777;
+}
+
+#submit:hover {
+  text-decoration: underline;
+  background-color: #a7cdcc;
+}
+
+#submit:active {
+  color: black;
+}
+
+#submit:visited{
+  color: #555555;
+}

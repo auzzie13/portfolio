@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
-import linkedin from "../../assets/LinkedIn-Thumbnail.png";
+import linkedin from "../../assets/linkedin.png";
 import github from "../../assets/github.png";
-import pdf from "../../assets/pdf.jpeg";
+import pdf from "../../assets/pdf.png";
 import resume from "../../assets/resume.pdf";
 
 function Cards() {
@@ -20,7 +20,7 @@ function Cards() {
               </div>
               <div className="media-content">
                 <p className="title is-4">LinkedIn</p>
-                <a href="https://www.linkedin.com/in/austin-williams-76b75b142/" target="_blank" >
+                <a href="https://www.linkedin.com/in/austin-williams-76b75b142/" target="_blank" id="linkedin">
                   Profile
                 </a>
               </div>
@@ -39,7 +39,7 @@ function Cards() {
               </div>
               <div className="media-content">
                 <p className="title is-4">GitHub</p>
-                <a href="https://github.com/auzzie13" target="_blank">Repositories</a>
+                <a href="https://github.com/auzzie13" target="_blank" id="github">Repositories</a>
               </div>
             </div>
           </div>
@@ -56,7 +56,7 @@ function Cards() {
               </div>
               <div className="media-content">
                 <p className="title is-4">Resume</p>
-                <a href={resume} target="_blank" >View</a>
+                <a href={resume} target="_blank" id="resume">View</a>
               </div>
             </div>
           </div>

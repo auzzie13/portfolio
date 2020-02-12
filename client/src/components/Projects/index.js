@@ -8,14 +8,6 @@ function Projects(props) {
           <div className="card">
             <div className="card-content">
               <div className="media">
-                <div className="media-left">
-                  <figure className="image is-48x48">
-                    <img
-                      src="https://bulma.io/images/placeholders/96x96.png"
-                      alt="Placeholder"
-                    />
-                  </figure>
-                </div>
                 <div className="media-content">
                   <p className="title is-4">{props.name}</p>
                   <a href={props.link} target="_blank" className="subtitle is-6">{props.link}</a>

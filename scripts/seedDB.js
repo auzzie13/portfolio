@@ -3,7 +3,7 @@ const Project = require("../models/project");
 
 // This file empties the Books collection and inserts the books below
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/portfolio");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://user:password1@ds023438.mlab.com:23438/heroku_mxzzlthc");
 
 const projectsSeed = [
   {
@@ -126,7 +126,7 @@ const projectsSeed = [
   {
     name: "Portfolio",
     codeLink: "",
-    deploymentLink: "austin-d-williams.herokuapp.com",
+    deploymentLink: "https://austin-d-williams.herokuapp.com",
     description:
       "Hope you are enjoying the site.",
     languages: "Mongoose, Express, React, Node",
