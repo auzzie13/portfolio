@@ -76,7 +76,8 @@ function ProjectsPage() {
           <Projects
             key={project.id}
             name={project.name}
-            link={project.deploymentLink}
+            deploymentLink={project.deploymentLink}
+            codeLink={project.codeLink}
             description={project.description}
             languages={project.languages}
             buttonfilter={project.buttonFilter}

@@ -8,7 +8,7 @@ import ContactPage from "./pages/Contact";
 
 const Page404 = ({ location }) => (
   <div>
-    <h2>404 :(</h2>
+    <h2>404 Error</h2>
   </div>
 );
 

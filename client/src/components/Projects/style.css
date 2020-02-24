@@ -2,3 +2,20 @@
   background-color: rgba(167,205,204,.5);
   /* color: #90938e */
 }
+
+a {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: #a7cdcc;
+}
+
+a:visited {
+  color: #555555;
+}
