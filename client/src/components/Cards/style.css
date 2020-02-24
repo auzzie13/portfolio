@@ -15,7 +15,8 @@
 
 #linkedin,
 #github,
-#resume {
+#resume,
+#myEmail {
   color: #555555;
   font-family: helvetica;
   text-decoration: none;
@@ -24,19 +25,21 @@
 
 #linkedin:hover,
 #github:hover,
-#resume:hover {
+#resume:hover,
+#myEmail:hover {
   text-decoration: underline;
-  background-color: #777777;
 }
 
 #linkedin:active,
 #github:active,
-#resume:active {
+#resume:active,
+#myEmail:active {
   color: black;
 }
 
 #linkedin:visited,
 #github:visited,
-#resume:visited {
+#resume:visited,
+#email:visited {
   color: #555555;
 }

@@ -10,14 +10,16 @@ function Projects(props) {
               <div className="media">
                 <div className="media-content">
                   <p className="title is-4">{props.name}</p>
-                  <a href={props.link} target="_blank" className="subtitle is-6">{props.link}</a>
+                  <a href={props.deploymentLink} target="_blank" className="subtitle is-6">Deployment Link</a>
+                  <a href={props.codeLink} target="_blank" className="subtitle is-6">GitHub Link</a>
                 </div>
               </div>
 
               <div className="content">
-                {props.description}
+                Description: {props.description}
                 <br />
-                {props.languages}
+                <br />
+                Languages: {props.languages}
               </div>
             </div>
           </div>
