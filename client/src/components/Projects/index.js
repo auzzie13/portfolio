@@ -16,10 +16,10 @@ function Projects(props) {
               </div>
 
               <div className="content">
-                Description: {props.description}
+                <b>Description:</b> {props.description}
                 <br />
                 <br />
-                Languages: {props.languages}
+                <b>Languages:</b> {props.languages}
               </div>
             </div>
           </div>
