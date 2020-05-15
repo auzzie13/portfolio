@@ -1,34 +1,72 @@
 import React from "react";
-import { Button } from "react-bulma-components";
+import { Button, Row, Col } from "react-bootstrap";
 import "./style.css";
 
-
-
 function ProjectButtons(props) {
-    return (
-        <div className="columns is-ancestor">
-        <Button onClick={props.onClick} id="front-end" name="front-end javascript">
-          Front-End Javascript
+  return (
+    <Row xs={1} md={3} lg={5} noGutters id="button-row">
+      <Col>
+        <Button
+          onClick={props.onClick}
+          id="front-end"
+          name="front-end javascript"
+          variant="secondary"
+          size="lg"
+          block
+        >
+          Front-End JS
         </Button>
-
-        <Button onClick={props.onClick} id="back-end" name="back-end javascript">
-          Back-End Javascript
+      </Col>
+      <Col>
+        <Button
+          onClick={props.onClick}
+          id="back-end"
+          name="back-end javascript"
+          variant="secondary"
+          size="lg"
+          block
+        >
+          Back-End JS
         </Button>
-
-        <Button onClick={props.onClick} id="react" name="react">
+      </Col>
+      <Col>
+        <Button
+          onClick={props.onClick}
+          id="react"
+          name="react"
+          variant="secondary"
+          size="lg"
+          block
+        >
           React
         </Button>
-
-        <Button onClick={props.onClick} id="mern" name="mern">
+      </Col>
+      <Col>
+        <Button
+          onClick={props.onClick}
+          id="mern"
+          name="mern"
+          variant="secondary"
+          size="lg"
+          block
+        >
           MERN
         </Button>
-
-        <Button onClick={props.onClick} id="all" name="all">
+      </Col>
+      <Col>
+        <Button
+          onClick={props.onClick}
+          id="all"
+          name="all"
+          variant="secondary"
+          size="lg"
+          block
+        >
           All
         </Button>
-      </div>
-    )
-
+      </Col>
+    </Row>
+  );
 }
 
 export default ProjectButtons;

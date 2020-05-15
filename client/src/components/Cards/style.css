@@ -1,24 +1,14 @@
-.column {
-  padding-top: 50px;
+#contact-row {
+  margin-top: 100px;
+  width: 75%;
 }
 
-.card {
-  border-radius: 20px;
-}
-
-#name,
-#email,
-#message {
-  background-color: rgba(167, 205, 204, 0.5);
-  color: #555555;
-}
 
 #linkedin,
 #github,
 #resume,
 #myEmail {
   color: #555555;
-  font-family: helvetica;
   text-decoration: none;
   text-transform: uppercase;
 }

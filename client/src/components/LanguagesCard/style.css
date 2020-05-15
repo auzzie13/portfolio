@@ -1,0 +1,18 @@
+#languages-row {
+  margin-top: 180px;
+  width: 90%;
+}
+
+#carousel-container {
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  border-radius: 5px;
+}
+
+#html-img, #css-img, #js-img, #jq-img, #bs-img, #node-img, #react-img, #mongo-img, #sql-img, #ex-img, #jest-img {
+  margin-top: 70px;
+}
+
+
+

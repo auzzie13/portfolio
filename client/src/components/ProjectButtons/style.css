@@ -1,18 +1,16 @@
-.is-ancestor {
-  /* margin-top: 50px; */
-    margin-right: auto;
-    margin-left: auto;
-    width: 75%;
-    /* background-color: #a7cdcc; */
-  }
-  
-  #front-end, #back-end, #react, #mern, #all {
-    margin-top: 50px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: rgba(167,205,204,.5);
-    width: 20%;
-    color: #555555;
-    text-align: center;
-    /* padding: 25px; */
-  }
+#button-row {
+  margin-top: 185px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 75%;
+}
+
+#front-end,
+#back-end,
+#react,
+#mern,
+#all {
+  background-color: rgba(167, 205, 204, 0.5);
+  color: #555555;
+  text-align: center;
+}
