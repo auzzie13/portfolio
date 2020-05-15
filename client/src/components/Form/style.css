@@ -1,20 +1,31 @@
-.column {
+Form {
+  margin-top: 185px;
+  width: 50%;
+}
+
+/* .column {
   padding-top: 50px;
-}
+} */
 
-.card {
+/* .card {
   border-radius: 20px;
-}
+} */
 
-#name,
-#email,
-#message {
+#formName,
+#formEmail,
+#formTextArea {
   background-color: rgba(167, 205, 204, 0.5);
   color: #555555;
+  box-shadow: none;
+}
+
+#formName:focus, #formEmail:focus, #formTextArea:focus {
+  border-color: #555555;
 }
 
 #submit {
-  background-color: #777777;
+  background-color: rgba(167, 205, 204, 0.5);
+  color: #555555;
 }
 
 #submit:hover {
@@ -26,6 +37,6 @@
   color: black;
 }
 
-#submit:visited{
+#submit:visited {
   color: #555555;
 }

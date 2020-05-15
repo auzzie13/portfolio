@@ -1,43 +1,28 @@
 #nav-bar {
-  margin-top: 15px;
-  background-color: #999999;
-}
-
-.is-horizontal-center {
-  justify-content: center;
-}
-
-#logo {
-  position: absolute;
-}
-
-#nav-toggle-state {
-  display: none;
-}
-
-#nav-toggle-state:checked ~ .navbar-menu {
-  display: block;
-  background-color: #999999;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  border-bottom: 2px solid #a7cdcc;
 }
 
 #label:hover {
   background-color: #a7cdcc;
 }
 
-#navbar-item1, #navbar-item2 {
-  color: #555555;
+#nav-link1, #nav-link2 {
+  color: #a7cdcc;
   text-decoration: none;
 }
 
-#navbar-item1:hover, #navbar-item2:hover {
+#nav-link1:hover, #nav-link2:hover {
   text-decoration: underline;
-  background-color: #a7cdcc;
+  background-color: #555555;
 }
 
-#navbar-item1:active, #navbar-item2:active {
+#nav-link1:active, #nav-link2:active {
   color: black;
 }
 
-#navbar-item1:visited, #navbar-item2:visited {
-  color: #555555;
+#nav-link1:visited, #nav-link2:visited {
+  color: #a7cdcc;
 }

@@ -1,41 +1,63 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { Navbar, Nav } from "react-bootstrap";
 import "./style.css";
 import logo from "../../assets/HatchfulExport-All/logo_transparent.png";
 
 function NavBar() {
   return (
-    <nav className="navbar" role="navigation" aria-label="main navigation" id="nav-bar">
-      <div className="navbar-brand" id="navbar-brand">
-        <Link className="navbar-item" to="/" >
-          <img src={logo} alt="logo" id="logo" />
-        </Link>
-        <label
-              id="label"
-              role="button"
-              className="navbar-burger burger"
-              aria-label="menu"
-              aria-expanded="false"
-              htmlFor="nav-toggle-state"
-            >
-              <span aria-hidden="true" />
-              <span aria-hidden="true" />
-              <span aria-hidden="true" />
-            </label>
-          </div>
-          <input type="checkbox" id="nav-toggle-state" />
+    // <nav className="navbar-collapse navbar navbar-expand-lg bg-transparent fixed-top" id="nav-bar">
+    //   <Link className="navbar-brand" to="/">
+    //     <img src={logo} width="70" height="70" alt="logo" id="logo" />
+    //   </Link>
+    //   <button
+    //     className="navbar-toggler collapse"
+    //     type="button"
+    //     data-toggle="collapse"
+    //     data-target="#responsive-navbar-nav"
+    //     aria-controls="responsive-navbar-nav"
+    //     aria-expanded="false"
+    //     aria- ="Toggle navigation"
+    //   >
+    //     <span className="navbar-toggler-icon"></span>
+    //   </button>
 
-          <div className="navbar-menu">
-        <div className="navbar-end">
-          <Link className="navbar-item" id="navbar-item1" to="/projects">
-            Projects
-          </Link>
-          <Link className="navbar-item" id="navbar-item2" to="/contact">
-            Contact
-          </Link>
-        </div>
-      </div>
-    </nav>
+    //   <div
+    //     className="collapse navbar-collapse d-inline-flex justify-content-end"
+    //     id="responsive-navbar-nav"
+    //   >
+    //     <ul className="navbar-nav">
+    //       <li className="nav-item">
+    //         <Link className="nav-link" id="navbar-item1" to="/projects">
+    //           Projects
+    //         </Link>
+    //       </li>
+    //       <li className="nav-item">
+    //         <Link className="nav-link" id="navbar-item2" to="/contact">
+    //           Contact
+    //         </Link>
+    //       </li>
+    //     </ul>
+    //   </div>
+    // </nav>
+    <Navbar collapseOnSelect id="nav-bar" expand="lg" fixed="top" variant="dark" bg="transparent">
+      <Navbar.Brand href="/">
+        <img
+          src={logo}
+          width="70"
+          height="70"
+          className="d-inline-block align-top"
+          alt="logo"
+        />
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav" >
+        <Nav >
+          <Nav.Link href="/projects" id="nav-link1">Projects</Nav.Link>
+          <Nav.Link href="/contact" id="nav-link2">Contact</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 }
 

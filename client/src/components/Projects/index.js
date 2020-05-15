@@ -4,7 +4,7 @@ import "./style.css";
 function Projects(props) {
 
   return (
-        <div className="column is-half">
+        <div className="column is-half mt-5">
           <div className="card">
             <div className="card-content">
               <div className="media">

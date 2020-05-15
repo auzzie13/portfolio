@@ -1,67 +1,60 @@
-import React from "react";
+import React, { useState } from "react";
+import { Form, Button } from "react-bootstrap";
 import "./style.css";
 
-function Form(props) {
+function ContactForm(props) {
+  const [validated, setValidated] = useState(false);
+
+  const handleSubmit = (event) => {
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+
+    setValidated(true);
+  };
+
   return (
-    <div className="columns is-centered">
-      <div className="column is-half">
-        <div className="field">
-          <label className="label">Name</label>
-          <div className="control">
-            <input
-              id="name"
-              onChange={e => props.onChange(e, "form")}
-              className="input"
-              type="text"
-              placeholder="Text input"
-              name="name"
-            />
-          </div>
-        </div>
-
-        <div className="field">
-          <label className="label">Email</label>
-          <div className="control has-icons-left has-icons-right">
-            <input
-              id="email"
-              onChange={e => props.onChange(e, "form")}
-              className="input"
-              name="email"
-              type="email"
-              placeholder="Email input"
-            />
-            <span className="icon is-small is-left">
-              <i className="fas fa-envelope"></i>
-            </span>
-            <span className="icon is-small is-right">
-              <i className="fas fa-exclamation-triangle"></i>
-            </span>
-          </div>
-        </div>
-
-        <div className="field">
-          <label className="label">Message</label>
-          <div className="control">
-            <textarea
-              id="message"
-              onChange={e => props.onChange(e, "form")}
-              className="textarea"
-              placeholder="Textarea"
-              name="message"
-            ></textarea>
-          </div>
-        </div>
-
-        <div className="field is-grouped">
-          <div className="control">
-            <button className="button" onClick={props.onClick} id="submit">
-              Submit
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <Form
+      noValidate
+      validated={validated}
+      onSubmit={handleSubmit}
+      className="mx-auto"
+      onChange={(e) => props.onChange(e, "form")}
+    >
+      <Form.Group controlId="formName">
+        <Form.Label>Name</Form.Label>
+        <Form.Control required placeholder="Enter Name" variant="secondary" />
+      </Form.Group>
+      <Form.Group controlId="formEmail">
+        <Form.Label>Email address</Form.Label>
+        <Form.Control
+          required
+          type="email"
+          placeholder="Enter email"
+          variant="secondary"
+        />
+      </Form.Group>
+      <Form.Group controlId="formTextArea">
+        <Form.Label>Message</Form.Label>
+        <Form.Control
+          required
+          as="textarea"
+          rows="5"
+          placeholder="Send me a message"
+        />
+      </Form.Group>
+      <Button
+        variant="secondary"
+        type="submit"
+        id="submit"
+        placeholder="Enter email"
+      >
+        Submit form
+      </Button>
+    </Form>
   );
 }
 
-export default Form;
+export default ContactForm;
