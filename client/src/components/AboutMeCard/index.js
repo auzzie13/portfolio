@@ -17,16 +17,14 @@ function AboutMeCard(props) {
   }
 
   return (
-    <Container id="about-me-container">
-      <Container id="home" style={{ display: "block" }}>
-        <Row className="my-auto justify-content-center">
+    <Container id="about-me-container" fluid>
+      <Row id="home" style={{ display: "block" }}>
+        <Col id="test1">
           <h1>
             Austin Williams
             <br></br>
             Full-Stack Web Developer
           </h1>
-        </Row>
-        <Row className="my-auto justify-content-center">
           <Button
             id="aboutMe"
             variant="secondary"
@@ -35,10 +33,10 @@ function AboutMeCard(props) {
           >
             About Me
           </Button>
-        </Row >
-      </Container>
-      <Container id="more" style={{ display: "none" }}>
-        <Row className="justify-content-center">
+        </Col >
+      </Row>
+      <Row id="more" style={{ display: "none" }}>
+        <Col id="test2">
         <p>
           Graduate of Vanderbilt University's Computer Coding Bootcamp, a full
           Stack Web Developer with both a front and back end knowledge base,
@@ -54,8 +52,6 @@ function AboutMeCard(props) {
           strong interpersonal skills, substantial organizational skills, and an
           attention to detail as part of a fast paced environment.
         </p>
-        </Row>
-        <Row className="justify-content-center">
         <Button
           id="home"
           name="home"
@@ -64,8 +60,8 @@ function AboutMeCard(props) {
         >
           Home
         </Button>
-        </Row>
-      </Container>
+        </Col>
+      </Row>
     </Container>
   );
 }

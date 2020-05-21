@@ -24,8 +24,8 @@ function LanguagesCard() {
   };
 
   return (
-    <Row xs={1} md={1} lg={3} className="mx-auto" id="languages-row">
-      <Col>
+    <Row className="mx-auto" id="languages-row">
+      {/* <Col>
       <Card className="p-5 my-auto mx-auto">
         <Card.Img variant="top" src={pdf} />
         <Card.Body className="mx-auto">
@@ -34,7 +34,7 @@ function LanguagesCard() {
           </a>
         </Card.Body>
       </Card>
-      </Col>
+      </Col> */}
       <Col>
     <Carousel
       activeIndex={index}
@@ -91,7 +91,7 @@ function LanguagesCard() {
       </Carousel.Item>
     </Carousel>
     </Col>
-    <Col>
+    {/* <Col>
     <Card className="p-5 my-auto mx-auto">
         <Card.Img variant="top" src={email} />
         <Card.Body className="mx-auto">
@@ -100,7 +100,7 @@ function LanguagesCard() {
           </a>
         </Card.Body>
       </Card>
-    </Col>
+    </Col> */}
     </Row>
   );
 }

@@ -1,7 +1,11 @@
 #resume-container {
-    margin-top: 50px;
+    margin-top: 150px;
     width: 50%;
     height: 500px;
     opacity: .6;
     border-radius: 5px;
   }
+
+/* #linkedin, #github, #myEmail, #resume {
+  
+} */
