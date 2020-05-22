@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Row, Carousel, Col, Card } from "react-bootstrap";
+import { Row, Carousel, Col } from "react-bootstrap";
 import HTML5 from "../../assets/HTML5_Logo_128.png";
 import CSS3 from "../../assets/css3-icon.png";
 import JS from "../../assets/javascript.png";
@@ -11,9 +11,9 @@ import MONGO from "../../assets/mongodb.png";
 import MYSQL from "../../assets/mySQL.png";
 import EX from "../../assets/express.png";
 import JEST from "../../assets/jest.png";
-import resume from "../../assets/Resume.pdf";
-import pdf from "../../assets/pdf.png";
-import email from "../../assets/email.png";
+// import resume from "../../assets/Resume.pdf";
+// import pdf from "../../assets/pdf.png";
+// import email from "../../assets/email.png";
 import "./style.css";
 
 function LanguagesCard() {
@@ -35,7 +35,7 @@ function LanguagesCard() {
         </Card.Body>
       </Card>
       </Col> */}
-      <Col>
+      <Col id="languages">Familiar Languages 
     <Carousel
       activeIndex={index}
       onSelect={handleSelect}

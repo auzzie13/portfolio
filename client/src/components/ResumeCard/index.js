@@ -12,19 +12,19 @@ function ResumeCard() {
     <Row xs={1} md={2} lg={4} id="resume-container" className="mx-auto">
       <Card className="p-5 my-auto mx-auto">
         <Card.Img variant="top" src={linkedin} />
-        <Card.Body className="mx-auto">
+        <Card.Body>
           <a
             href="https://www.linkedin.com/in/austin-williams-76b75b142/"
             target="_blank"
             id="linkedin"
           >
-            <Card.Title className="mx-auto">LinkedIn</Card.Title>
+            <Card.Title>LinkedIn</Card.Title>
           </a>
         </Card.Body>
       </Card>
       <Card className="p-5 my-auto mx-auto">
         <Card.Img variant="top" src={github} />
-        <Card.Body className="mx-auto">
+        <Card.Body>
           <a href="https://github.com/auzzie13" target="_blank" id="github">
             <Card.Title>GitHub</Card.Title>
           </a>
@@ -32,7 +32,7 @@ function ResumeCard() {
       </Card>
       <Card className="p-5 my-auto mx-auto">
         <Card.Img variant="top" src={pdf} />
-        <Card.Body className="mx-auto">
+        <Card.Body>
           <a href={resume} target="_blank" id="resume">
             <Card.Title>Resume</Card.Title>
           </a>
@@ -40,7 +40,7 @@ function ResumeCard() {
       </Card>
       <Card className="p-5 my-auto mx-auto">
         <Card.Img variant="top" src={email} />
-        <Card.Body className="mx-auto">
+        <Card.Body>
           <a href="mailto:auswil13@gmail.com" target="_blank" id="myEmail">
             <Card.Title>Email</Card.Title>
           </a>

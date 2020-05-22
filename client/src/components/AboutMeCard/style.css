@@ -1,13 +1,23 @@
 #about-me-container {
-  margin-top: 50px;
+  margin-top: 250px;
   width: 90%;
   height: 300px;
   background-color: #555555;
-  opacity: 0.6;
+  opacity: 0.8;
   border-radius: 5px;
 }
 
-#test1, #test2 {
+#test1 {
+  padding: 2em;
+  text-align: center;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto; 
+  color: #a7cdcc;
+  font-size: 2.5em;
+}
+
+#test2 {
   padding: 4.2em;
   text-align: center;
   justify-content: center;
@@ -22,7 +32,7 @@
 
 .btn {
   background-color: #a7cdcc;
-  color: #555555;
+  color: #999999;
 
 } 
 
