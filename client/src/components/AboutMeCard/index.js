@@ -17,7 +17,7 @@ function AboutMeCard(props) {
   }
 
   return (
-    <Container id="about-me-container" fluid>
+    <Container id="about-me-container" >
       <Row id="home" style={{ display: "block" }}>
         <Col id="test1">
           <h1>
@@ -36,7 +36,7 @@ function AboutMeCard(props) {
         </Col >
       </Row>
       <Row id="more" style={{ display: "none" }}>
-        <Col id="test2">
+        <Col md={"auto"} id="test2">
         <p>
           Graduate of Vanderbilt University's Computer Coding Bootcamp, a full
           Stack Web Developer with both a front and back end knowledge base,
@@ -57,6 +57,7 @@ function AboutMeCard(props) {
           name="home"
           variant="secondary"
           onClick={toggleStyle}
+          style={{"margin": "1em"}}
         >
           Home
         </Button>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import Moment from 'react-moment';
 import "./style.css";
 import API from "../../utils/API";
 
@@ -42,6 +43,8 @@ function Weather() {
   });
 
   useEffect(() => {
+
+
     const success = (pos) => {
       var { coords } = pos;
       // setPosition({
@@ -125,14 +128,18 @@ function Weather() {
 
     navigator.geolocation.getCurrentPosition(success, error);
 
-    // console.log(lat, lon);
   }, []);
 
+  let date = new Date()
+
   return (
-    <Container fluid>
-      <Row xs={1} md={1} lg={2} id="weather-container">
+    <Container id="weather-container" fluid> Your Local Forecast:
+      <Row>
         <Col id="current-weather">
-          <h1>{current.cityName}</h1>
+          <h1>{current.cityName}
+          <br></br>
+          <Moment format="ddd MMM DD">{date}</Moment>
+          </h1>
           <div>
             Current Temperature: {current.currentTemp}
             <span>&#176;</span>
@@ -148,9 +155,13 @@ function Weather() {
           <div>Description: {current.description}</div>
           <img src={current.icon} />
         </Col>
-        <Row id="five-day">
+        </Row>
+        <Row xs={2} md={2} lg={5} id="five-day">
           <Col id="day1">
-            <div>{current.cityName}</div>
+            <div>{current.cityName}
+            <br></br>
+            <Moment format="ddd MMM DD" add={{ days: 1 }}>{date}</Moment>
+            </div>
             <div>
               High: {fiveDay.dayOneHigh}
               <span>&#176;</span>
@@ -167,7 +178,10 @@ function Weather() {
             <img src={fiveDay.dayOneIcon} />
           </Col>
           <Col id="day2">
-          <div>{current.cityName}</div>
+          <div>{current.cityName}
+          <br></br>
+            <Moment format="ddd MMM DD" add={{ days: 2 }}>{date}</Moment>
+          </div>
             <div>
               High: {fiveDay.dayTwoHigh}
               <span>&#176;</span>
@@ -184,7 +198,10 @@ function Weather() {
             <img src={fiveDay.dayTwoIcon} />
           </Col>
           <Col id="day3">
-          <div>{current.cityName}</div>
+          <div>{current.cityName}
+          <br></br>
+            <Moment format="ddd MMM DD" add={{ days: 3 }}>{date}</Moment>
+          </div>
             <div>
               High: {fiveDay.dayThreeHigh}
               <span>&#176;</span>
@@ -201,7 +218,10 @@ function Weather() {
             <img src={fiveDay.dayThreeIcon} />
           </Col>
           <Col id="day4">
-          <div>{current.cityName}</div>
+          <div>{current.cityName}
+          <br></br>
+            <Moment format="ddd MMM DD" add={{ days: 4 }}>{date}</Moment>
+          </div>
             <div>
               High: {fiveDay.dayFourHigh}
               <span>&#176;</span>
@@ -218,7 +238,10 @@ function Weather() {
             <img src={fiveDay.dayFourIcon} />
           </Col>
           <Col id="day5">
-          <div>{current.cityName}</div>
+          <div>{current.cityName}
+          <br></br>
+            <Moment format="ddd MMM DD" add={{ days: 5 }}>{date}</Moment>
+          </div>
             <div>
               High: {fiveDay.dayFiveHigh}
               <span>&#176;</span>
@@ -235,7 +258,7 @@ function Weather() {
             <img src={fiveDay.dayFiveIcon} />
           </Col>
         </Row>
-      </Row>
+      
     </Container>
   );
 }

@@ -1,24 +1,41 @@
 #weather-container {
-  height: 350px;
+  height: auto;
   background-color: #999999;
-  margin-top: 50px;
+  margin-top: 100px;
+  padding: 20px;
+  font-size: 32px;
+  text-align: center;
+  color: #a7cdcc;
+  text-shadow: -1px 0 #555, 0 1px #555, 1px 0 #555, 0 -1px #555;
+  
 }
 
 #current-weather {
   /* height: 80%; */
   text-align: center;
   justify-content: center;
-  margin: auto; 
+  padding: 20px;
+  color: #a7cdcc;
+  font-size: 24px;
+  text-shadow: -1px 0 #555, 0 1px #555, 1px 0 #555, 0 -1px #555;
+
 }
 
 #five-day {
-  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #day1, #day2, #day3, #day4, #day5 {
-  /* padding: 5px; */
+  padding: 20px;
   justify-content: center;
-  margin: auto; 
+  margin: auto;
+  border: 2px solid #a7cdcc;
+  color: #a7cdcc;
+  font-size: 20px;
+  text-shadow: -1px 0 #555, 0 1px #555, 1px 0 #555, 0 -1px #555;
+  border-radius: 15px 50px
 }
 
 
