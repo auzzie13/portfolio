@@ -48,7 +48,7 @@ function NavBar() {
           height="70"
           className="d-inline-block align-top"
           alt="logo"
-        />A. Williams
+        />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav" >
