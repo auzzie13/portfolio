@@ -4,6 +4,7 @@
   width: 90%;
   border-bottom: 2px solid #a7cdcc;
   position: fixed;
+  z-index: 0;
 }
 
 #label:hover {
