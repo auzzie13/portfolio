@@ -44,8 +44,8 @@ function NavBar() {
       <Navbar.Brand href="/">
         <img
           src={logo}
-          width="70"
-          height="70"
+          width="70em"
+          height="70em"
           className="d-inline-block align-top"
           alt="logo"
         />
