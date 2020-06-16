@@ -46,7 +46,7 @@ function NavBar() {
           src={logo}
           width="70em"
           height="70em"
-          className="d-inline-block align-top"
+          className="d-inline-block align-top img-fluid"
           alt="logo"
         />
       </Navbar.Brand>
