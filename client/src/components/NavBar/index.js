@@ -40,7 +40,7 @@ function NavBar() {
     //     </ul>
     //   </div>
     // </nav>
-    <Navbar  id="nav-bar" expand="lg" fixed="top" variant="dark" bg="transparent">
+    <Navbar  id="nav-bar" sticky="top" bg="transparent">
       <Navbar.Brand href="/">
         <img
           src={logo}
