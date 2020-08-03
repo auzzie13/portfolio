@@ -10,6 +10,12 @@
   background-color: #a7cdcc;
 }
 
+#brand {
+  color: #a7cdcc;
+  text-shadow: -1px 0 #555, 0 1px #555, 1px 0 #555, 0 -1px #555;
+  font-size: 2em;
+}
+
 #nav-link1, #nav-link2 {
   color: #a7cdcc;
   text-decoration: none;
