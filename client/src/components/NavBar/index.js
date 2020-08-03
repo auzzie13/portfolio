@@ -2,7 +2,6 @@ import React from "react";
 // import { Link } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 import "./style.css";
-import logo from "../../assets/HatchfulExport-All/logo_transparent.png";
 
 function NavBar() {
   return (
@@ -41,14 +40,8 @@ function NavBar() {
     //   </div>
     // </nav>
     <Navbar  id="nav-bar" sticky="top" bg="transparent">
-      <Navbar.Brand href="/">
-        <img
-          src={logo}
-          width="70em"
-          height="70em"
-          className="img-fluid"
-          alt="logo"
-        />
+      <Navbar.Brand href="/" id="brand">
+        A.Williams
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav" >
